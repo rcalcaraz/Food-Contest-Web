@@ -9,3 +9,7 @@ En "core->PDOconnection.php" se pueden cambiar los parametros de conexión con d
 ![Escritorio](https://drive.google.com/file/d/0Bz4LuIzp5T_Zc3pTWE9Wd2plSTA/view?usp=sharing)
 ![Tableta](https://drive.google.com/file/d/0Bz4LuIzp5T_ZaUh4RDk2UExEOTQ/view?usp=sharing)
 ![Movil](https://drive.google.com/file/d/0Bz4LuIzp5T_ZY29XQ2lEb0JUQXc/view?usp=sharing)
+![](https://github.com/github/training-kit/blob/master/images/professortocat.png)
+
+
+
