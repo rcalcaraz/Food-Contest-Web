@@ -1,0 +1,10 @@
+Insertar nuevo usuario: profesor@esei.uvigo.es Analia Password
+Insertar nuevo establecimiento: ESEI uvigo ... Foto: 23.jpg
+Login Admin: Admin AdminPass, gestiona propuestas de pinchos (aceptar/denegar)
+Login Jurado popular: Analia Password, vota por un pincho
+Login Establecimiento: ESEI uvigo
+
+Seguridad para no entrar en páginas indebidas
+Cerrar sesión
+Mensajes de error
+Validaciones para votar, logins y registros

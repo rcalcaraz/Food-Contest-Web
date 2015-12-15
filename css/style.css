@@ -1,0 +1,383 @@
+/* TODO EL CSS ESTA DISEÑADO "MOBILE FIRST", AL FINAL DEL DOCUMENTO SE ENCUENTRAN LAS QUERYS PARA LA VERSION DE TABLETA Y ESCRITORIO */
+
+/**
+    @author Rafael Castillo Alcaraz
+*/
+
+/* INDICE DE ESTILOS 
+- Fuentes
+- Estilos de Caracter General (hX, forms...)
+- Ventanas modales
+- Estilos por secciones
+- Flickity
+- Thumbnails
+- Otros
+- Google Maps
+- Adaptacion Responsive para escritorio
+- Stars Rating
+*/
+
+
+/*** FUENTES ***/
+
+@font-face {
+    font-family: Devious;
+    src: url(../fonts/DEVIOUS.ttf);
+}
+
+@font-face {
+    font-family: Bariol;
+    src: url(../fonts/bariol_regular-webfont.ttf);
+}
+
+
+/*** ESTILOS DE CARACTER GENERAL ***/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Bariol;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1em;
+    color: white;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: none;
+}
+
+
+/** MODALES **/
+
+.descripcionPinchoModal {
+    padding: 2vh;
+}
+
+.descripcionJuradoModal {
+    padding: 2vh;
+}
+
+
+/*** SECCIONES ***/
+
+
+/* General para todas las secciones */
+
+section {
+    position: relative;
+    background: whitesmoke;
+    padding-bottom: 20vh;
+    padding-top: 20vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+
+/* Secciones concretas */
+
+#adminEscritorio {
+    min-height: 90vh;
+    text-align: justify;
+    display: none;
+}
+
+#adminMovil {
+    min-height: 90vh;
+    text-align: center;
+}
+
+#portada {
+    display: none;
+}
+
+#descripcion {
+    display: none;
+}
+
+#pinchos {
+    padding-bottom: 20vh;
+}
+
+#pinchosEscritorio {
+    display: none;
+}
+
+#jurado {
+    background: salmon url(../images/noise.png);
+}
+
+#juradoEscritorio {
+    display: none;
+    margin-top: 5vh;
+}
+
+#juradoMovil {
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+.divisor {
+    height: 5vh;
+    background: salmon url(../images/noise.png);
+}
+
+#top {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+}
+
+#linkFolleto{
+    color: white;
+}
+
+footer {
+    height: 10vh;
+    color: gray;
+    background: black url(../images/noise.png);
+    padding: 4vh;
+}
+
+/* Flickity */
+
+.captionFlickity {
+    background: #FAFAFA;
+    margin: 0;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    font-family: Devious;
+}
+
+
+/* Barra de navegacion */
+
+.navbar-nav.nav-justified > li {
+    float: none;
+}
+
+
+/* Miniaturas */
+
+.thumbnail {
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.thumbnail:hover {
+    background-color: #e6e6e6;
+}
+
+.tituloPinchos {
+    margin-bottom: 10vh;
+}
+
+.fotoPerfil {
+   
+}
+
+.jurado {
+    padding-top: 10vh;
+}
+
+#juradoEscritorio img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.thumbnail:hover > img {
+    border-radius: 0%;
+    !important
+}
+
+.panel {
+    margin-top: 10vh;
+}
+
+/* Otros */
+
+.adminContenido {
+    padding: 5vh;
+    background-color: white;
+}
+
+.botonRegistro {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 150px;
+    width: 60vw;
+}
+
+.botonIngrediente {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 2vh;
+}
+
+.elegirFinalistas {
+    height: 25vh;
+    min-height: 120px;
+}
+
+.elegirFolleto {
+    height: 25vh;
+    min-height: 120px;
+}
+
+.panelRegistro {
+    padding: 5vh;
+}
+
+.subrayadoTitulo {
+    background-color: orangered;
+    color: white;
+    padding: 3vh;
+}
+
+.subrayado {
+    background-color: orangered;
+    color: white;
+    padding: 1vh;
+}
+
+.subtituloVotacion {
+    margin-top: 5vh;
+    font-size: 2em;
+}
+
+.tablasAdmin {
+    text-align: justify;
+}
+
+.tablasAdminMovil {
+    text-align: center;
+}
+
+.alert{
+    margin-bottom: 0px !important;
+}
+
+.botonEliminarEstablecimiento{
+    border: 0px;
+    background-color: white;
+}
+
+.botonModalPincho{
+    margin-top: 10vh;
+}
+
+
+/*** SEPARADORES ***/
+
+section::before,
+section::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.ss-style-triangles::after {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-triangles::after {
+    bottom: -50px;
+    z-index: 10;
+    background: inherit;
+}
+
+/*** GOOGLE MAPS ***/
+
+.google-maps {
+    overflow: hidden;
+    height: 100px;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/*** ESTILOS RESPONSIVE PARA ESCRITORIO ***/
+
+@media screen and (min-width: 1000px) {
+    section {
+        padding: 20vh;
+    }
+    label {
+        display: block;
+    }
+    #portada {
+        height: 100vh;
+        background-image: url(../images/fondoPortada.jpg);
+        background-repeat: no-repeat;
+        color: black;
+        padding-top: 80vh;
+        display: block;
+    }
+    #descripcion {
+        display: block;
+        background: salmon url(../images/noise.png);
+    }
+    #pinchosEscritorio {
+        display: block;
+    }
+    #pinchosMovil {
+        display: none;
+    }
+    #juradoMovil {
+        display: none;
+    }
+    #juradoEscritorio {
+        display: block;
+    }
+    #adminMovil {
+        display: none;
+    }
+    #adminEscritorio {
+        display: block;
+    }
+    .panelLogin{
+         min-height: 250px;   
+    }
+    .botonRegistro{
+         width: 200px;   
+    }
+}
+
+
+
+
